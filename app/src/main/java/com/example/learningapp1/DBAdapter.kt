@@ -1,5 +1,7 @@
 package com.example.learningapp1
 
+import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +28,16 @@ class DBAdapter(private val listDataku: ArrayList<DBModel>): RecyclerView.Adapte
         holder.tvjudulku.text = dataku.judul
         holder.tvtanggalku.text = dataku.tanggal
         holder.tvketeranganku.text = dataku.keterangan
+
+        holder.btndelete.setOnClickListener {
+            var adapterDBHelper: DBHelper2
+            adapterDBHelper = DBHelper2(holder.itemView.context)
+            adapterDBHelper.deleteData(dataku.judul)
+            listDataku.removeAt(position)
+            notifyDataSetChanged()
+        }
+
+
     }
 
     override fun getItemCount(): Int {

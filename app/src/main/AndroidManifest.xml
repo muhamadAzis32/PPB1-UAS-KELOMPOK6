@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningApp1">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="true" />
+        <activity
             android:name=".RvDbActivity"
             android:exported="true" />
         <activity
