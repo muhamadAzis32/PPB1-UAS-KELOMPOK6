@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val cvData: CardView = findViewById(R.id.cv_listData)
         val cvAdd: CardView = findViewById(R.id.cv_addData)
-        //val cvAbout: CardView = findViewById(R.id.cv_about)
+        val cvAbout: CardView = findViewById(R.id.cv_about)
         val cvLogout: CardView = findViewById(R.id.cv_logout)
 
         val savedLogin = getSharedPreferences("Login", MODE_PRIVATE)
@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         cvAdd.setOnClickListener {
             var pindah2 = Intent(this, TodoaddActivity::class.java)
             startActivity(pindah2)
+        }
+        cvAbout.setOnClickListener {
+            var pindah3 = Intent(this, AboutActivity::class.java)
+            startActivity(pindah3)
         }
 
         cvLogout.setOnClickListener {
