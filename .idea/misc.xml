@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/drawable/ic_baseline_accessibility_24.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_example.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_todo.xml" value="0.25" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/layout/activity_todoadd.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/Muhamad Azis/Downloads/Compressed/LoginWithSQLite-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
