@@ -35,10 +35,15 @@ class TodoaddActivity : AppCompatActivity() {
         val toast: Toast = Toast.makeText(applicationContext,
             "Berhasil Menambahkan Data", Toast.LENGTH_SHORT)
         toast.show()
+        var pindah = Intent(this, RvDbActivity::class.java)
+        startActivity(pindah)
     }
+    /*
     fun showAll(v: View){
         var pindah = Intent(this, RvDbActivity::class.java)
         startActivity(pindah)
     }
+    */
+
 
 }

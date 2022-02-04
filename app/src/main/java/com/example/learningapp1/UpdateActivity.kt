@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 
 class UpdateActivity : AppCompatActivity() {
 
@@ -36,6 +37,11 @@ class UpdateActivity : AppCompatActivity() {
         var keteranganin = inputKeterangan.text.toString()
 
         todoDBHelper2.updateData(judulin, tanggalin, keteranganin)
+
+        val toast: Toast = Toast.makeText(applicationContext,
+            "Berhasil Update Data", Toast.LENGTH_SHORT)
+        toast.show()
+
         var pindah = Intent(this, RvDbActivity::class.java)
         startActivity(pindah)
     }
