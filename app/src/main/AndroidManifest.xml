@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/logoapp"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningApp1">
-
+        <activity
+            android:name=".RvDbActivity"
+            android:exported="true" />
         <activity
             android:name=".TodoaddActivity"
             android:exported="true" />
         <activity
             android:name=".TodoActivity"
             android:exported="true" />
-
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
