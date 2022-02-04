@@ -36,6 +36,10 @@ class LoginActivity : AppCompatActivity() {
                 editSavedLogin.putString("Status", "On")
                 editSavedLogin.commit()
 
+                val toast: Toast = Toast.makeText(applicationContext,
+                    "Berhasil Login", Toast.LENGTH_SHORT)
+                toast.show()
+
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             } else {

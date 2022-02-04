@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 
 class TodoaddActivity : AppCompatActivity() {
 
@@ -31,7 +32,9 @@ class TodoaddActivity : AppCompatActivity() {
         inputJudul.setText("")
         inputTanggal.setText("")
         inputKeterangan.setText("")
-
+        val toast: Toast = Toast.makeText(applicationContext,
+            "Berhasil Menambahkan Data", Toast.LENGTH_SHORT)
+        toast.show()
     }
     fun showAll(v: View){
         var pindah = Intent(this, RvDbActivity::class.java)
