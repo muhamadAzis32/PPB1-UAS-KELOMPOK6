@@ -70,7 +70,25 @@ class DBHelper2(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, null
         return todo
     }
 
+    fun deleteData(judulin: String){
+        val db = writableDatabase
+        val namatablet = DBInfo2.UserInput.TABLE_NAME
+        val judult = DBInfo2.UserInput.COL_JUDUL
+        val sql = "DELETE FROM " +namatablet+ " WHERE "+judult+"='"+judulin+"'"
+        db.execSQL(sql)
+    }
 
+    fun updateData(judulin: String, tanggalin: String, keteranganin: String){
+        val db = writableDatabase
+        val namatablet = DBInfo2.UserInput.TABLE_NAME
+        val judult = DBInfo2.UserInput.COL_JUDUL
+        val tanggalt = DBInfo2.UserInput.COL_TANGGAL
+        val keterangant = DBInfo2.UserInput.COL_KETERANGAN
+        var sql = "UPDATE "+ namatablet + " SET "+
+                tanggalt+"='"+tanggalin+"', "+keterangant+"='"+keteranganin+"' "+
+                "WHERE "+judult+"='"+judulin+"'"
+        db.execSQL(sql)
+    }
 
 
 }
