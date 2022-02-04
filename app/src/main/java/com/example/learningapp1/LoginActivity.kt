@@ -20,7 +20,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-
         val editUsername: EditText = findViewById(R.id.EditUsernameLogin)
         val editPassword: EditText = findViewById(R.id.EditPasswordLogin)
         val btnLogin: Button = findViewById(R.id.btnLogin)

@@ -38,7 +38,7 @@ class RegisterActivity : AppCompatActivity() {
         var ijenkal = ejenkal.text.toString()
         var ialamat = ealamat.text.toString()
         var cekuser = userDBHelper.cekUser(iemail)
-        var status = "Gagal"
+        var status = "Gagal Register"
         if (cekuser =="0") {
             userDBHelper.RegisterUser(iemail, ipassword, ifullname, ijenkal, ialamat)
             status = "Sukses"
