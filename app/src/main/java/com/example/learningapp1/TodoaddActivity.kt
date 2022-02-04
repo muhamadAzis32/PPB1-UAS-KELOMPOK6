@@ -34,7 +34,7 @@ class TodoaddActivity : AppCompatActivity() {
 
     }
     fun showAll(v: View){
-        var pindah = Intent(this, TodoActivity::class.java)
+        var pindah = Intent(this, RvDbActivity::class.java)
         startActivity(pindah)
     }
 

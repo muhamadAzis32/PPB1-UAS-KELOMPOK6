@@ -42,7 +42,8 @@ class DBHelper2(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, null
     }
 
     fun fullData():ArrayList<DBModel>{
-        val todo = ArrayList<DBModel>()
+//        val todo = ArrayList<DBModel>()
+        val todo = arrayListOf<DBModel>()
         val db = writableDatabase
         var cursor: Cursor? = null
         try {
