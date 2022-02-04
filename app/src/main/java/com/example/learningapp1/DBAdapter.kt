@@ -37,6 +37,16 @@ class DBAdapter(private val listDataku: ArrayList<DBModel>): RecyclerView.Adapte
             notifyDataSetChanged()
         }
 
+        holder.btnupdate.setOnClickListener {
+            val pindahUpdAc = Intent(holder.itemView.context, UpdateActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("judulk", dataku.judul)
+            bundle.putString("tanggalk", dataku.tanggal)
+            bundle.putString("keterangank", dataku.keterangan)
+
+            pindahUpdAc.putExtras(bundle)
+            holder.itemView.context.startActivity(pindahUpdAc)
+        }
 
     }
 

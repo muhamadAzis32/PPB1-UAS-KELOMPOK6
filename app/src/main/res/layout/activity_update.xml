@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
     tools:context=".UpdateActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Todolist"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_judulu"
+        android:hint="Judul !!"
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_tanggalu"
+        android:hint="Tanggal !!"/>
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_keteranganu"
+        android:hint="Keterangan !!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            style="@style/btn_Style"
+            android:id="@+id/btn_updatecard"
+            android:text="update"
+            android:onClick="updateData"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/btn_Style"
+            android:text="CANCEL"
+            android:onClick="cancelData"/>
+
+    </LinearLayout>
+
+</LinearLayout>
